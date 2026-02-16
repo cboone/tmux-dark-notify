@@ -7,4 +7,4 @@ set -o pipefail
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 RUNNER="${CURRENT_DIR}/scripts/tmux-dark-notify-runner.sh"
 
-$RUNNER &
+$RUNNER >/dev/null 2>&1 &
